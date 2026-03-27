@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
+import { Link } from "react-router-dom";
 
 const posts = [
   {
@@ -7,7 +8,7 @@ const posts = [
       "Discover smart investment strategies to streamline and organize your portfolio. Explore innovative approaches to optimize your long-term growth.",
     image:
       "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
-    href: "#",
+    href: "/blog/system-design",
     accent: false,
   },
   {
@@ -147,14 +148,14 @@ const LatestWriting = () => {
                     post.accent ? " is-accent" : ""
                   }`}
                 >
-                  <a href={post.href}>{post.title}</a>
+                  <Link to={post.href}>{post.title}</Link>
                 </h3>
 
                 <p className="latest-writing-card-excerpt">{post.excerpt}</p>
 
-                <a href={post.href} className="latest-writing-card-link">
+                <Link to={post.href} className="latest-writing-card-link">
                   Read more <span aria-hidden="true">→</span>
-                </a>
+                </Link>
               </article>
             ))}
           </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
@@ -7,7 +8,7 @@ const projects = [
       "A lightweight MVP to centralize operational workflows, reporting and internal visibility for cross-functional teams.",
     image:
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80",
-    href: "#",
+    href: "/portfolio/internal-dashboard",
     status: "MVP",
   },
   {
@@ -54,10 +55,8 @@ const Portfolio = () => {
 
               <p className="selected-work-card-text">{project.description}</p>
 
-              <a
-                href={project.href}
-                target="_blank"
-                rel="noreferrer"
+              <Link
+                to={project.href}
                 className="selected-work-card-link"
               >
                 Read More
@@ -67,7 +66,7 @@ const Portfolio = () => {
                 >
                   →
                 </span>
-              </a>
+              </Link>
             </div>
 
             <div className="selected-work-card-media">
