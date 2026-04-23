@@ -542,6 +542,10 @@ section h3 {
    ABOUT
 ========================= */
 
+.about-page p {
+  text-align: justify;
+}
+
 .skills-list {
   display: flex;
   flex-wrap: wrap;
@@ -562,6 +566,10 @@ section h3 {
   display: flex;
   gap: 1.5rem;
   margin-top: 1rem; 
+}
+
+.social-links a:last-child {
+  font-weight: 600;
 }
 
 .about-actions {
