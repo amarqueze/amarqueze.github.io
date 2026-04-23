@@ -73,18 +73,20 @@ const About = () => {
 
       <h3>Connect</h3>
       <div className="social-links">
-        <a href="https://github.com/username" target="_blank" rel="noreferrer">
+        <a href="https://github.com/amarqueze" 
+          target="_blank" 
+          rel="noreferrer">
           GitHub
         </a>
         <a
-          href="https://linkedin.com/in/username"
+          href="https://www.linkedin.com/in/amarqueze"
           target="_blank"
           rel="noreferrer"
         >
           LinkedIn
         </a>
         <a
-          href="https://instagram.com/username"
+          href="https://www.instagram.com/alan.marqueze"
           target="_blank"
           rel="noreferrer"
         >

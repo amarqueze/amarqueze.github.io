@@ -5,13 +5,13 @@ const Footer = () => {
     <footer className="footer">
       <p>© 2024 Alan Márquez Escorcia</p>
       <div className="social-links">
-        <a href="https://github.com/username" target="_blank" rel="noreferrer">
+        <a href="https://github.com/amarqueze" target="_blank" rel="noreferrer">
           GitHub
         </a>
-        <a href="https://linkedin.com/in/username" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/amarqueze" target="_blank" rel="noreferrer">
           LinkedIn
         </a>
-        <a href="https://instagram.com/username" target="_blank" rel="noreferrer">
+        <a href="https://www.instagram.com/alan.marqueze" target="_blank" rel="noreferrer">
           Instagram
         </a>
       </div>

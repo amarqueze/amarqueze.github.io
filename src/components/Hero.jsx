@@ -1,5 +1,5 @@
 import React from "react";
-import avatar from "../assets/avatar.png";
+import avatar from "../assets/photo-profile.jpeg";
 
 const defaultAvatar =
   "https://ui-avatars.com/api/?name=Alan+Marquez+Escorcia&background=F5F5F7&color=1D1D1F&size=200";
@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section className="hero">
       <img
-        src={defaultAvatar}
+        src={avatar}
         alt="Alan Márquez Escorcia"
         className="hero-avatar"
         onError={(e) => {
@@ -28,18 +28,20 @@ const Hero = () => {
       <p className="tagline">Continuous learning and system thinking.</p>
 
       <div className="hero-links">
-        <a href="https://github.com/username" target="_blank" rel="noreferrer">
+        <a href="https://github.com/amarqueze"
+          target="_blank" 
+          rel="noreferrer">
           GitHub
         </a>
         <a
-          href="https://linkedin.com/in/username"
+          href="https://www.linkedin.com/in/amarqueze"
           target="_blank"
           rel="noreferrer"
         >
           LinkedIn
         </a>
         <a
-          href="https://instagram.com/username"
+          href="https://www.instagram.com/alan.marqueze"
           target="_blank"
           rel="noreferrer"
         >
