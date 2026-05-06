@@ -3,41 +3,13 @@ import { Link } from "react-router-dom";
 
 const posts = [
   {
-    title: "Clever ways to invest in product to organize your portfolio",
+    title: "Complete Guide to Getting Started with LangChain",
     excerpt:
-      "Discover smart investment strategies to streamline and organize your portfolio. Explore innovative approaches to optimize your long-term growth.",
-    image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
-    href: "/blog/system-design",
-    accent: false,
-  },
-  {
-    title: "How to grow your profit through systematic investment with us",
-    excerpt:
-      "Unlock the power of systematic investment with a disciplined approach and build a clearer path toward your financial goals over time.",
-    image:
-      "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=1200&q=80",
-    href: "#",
-    accent: false,
-  },
-  {
-    title: "Why thoughtful systems design still matters in modern teams",
-    excerpt:
-      "A practical view on architecture decisions, tradeoffs, and how to keep software systems maintainable as complexity grows.",
-    image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
-    href: "#",
-    accent: false,
-  },
-  {
-    title: "Learning AI in public without losing focus on engineering",
-    excerpt:
-      "How to explore modern AI tools while still building strong fundamentals in backend, product thinking, and system design.",
-    image:
-      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
-    href: "#",
-    accent: false,
-  },
+      "Architecture, RAG, agents, real applications and how LangChain connects LLMs with production software systems.",
+    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+    href: "/blog/langchain-guide",
+    accent: true
+  }
 ];
 
 const getVisibleCards = () => {

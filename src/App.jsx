@@ -6,6 +6,7 @@ import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Portfolio from './pages/Portfolio.jsx';
 import Blog from './pages/Blog.jsx';
+import LangChainPost from "./pages/blog/LangChainPost.jsx";
 import SystemDesignPost from './pages/blog/SystemDesignPost.jsx';
 import InternalDashboardProject from './pages/portfolio/InternalDashboardProject.jsx';
 import ScrollToTop from "./components/ScrollToTop.jsx";
@@ -22,6 +23,7 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/blog" element={<Blog />} />
 
+          <Route path="/blog/langchain-guide" element={<LangChainPost />} />
           <Route path="/blog/system-design" element={<SystemDesignPost />} />
 
           <Route path="/portfolio/internal-dashboard" element={<InternalDashboardProject />} />
