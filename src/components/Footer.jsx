@@ -11,7 +11,11 @@ const Footer = () => {
         <a href="https://www.linkedin.com/in/amarqueze" target="_blank" rel="noreferrer">
           LinkedIn
         </a>
-        <a href="https://www.instagram.com/alan.marqueze" target="_blank" rel="noreferrer">
+        <a target="_blank" 
+          rel="noreferrer"
+          aria-disabled="true"
+          style={{ color: "gray", cursor: "not-allowed" }}
+        >
           Instagram
         </a>
       </div>

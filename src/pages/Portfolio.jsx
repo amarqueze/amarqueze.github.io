@@ -3,31 +3,31 @@ import { Link } from "react-router-dom";
 
 const projects = [
   {
-    title: "Internal dashboard for product operations",
+    title: "Multi-Tenant Authentication Scaffold",
     description:
-      "A lightweight MVP to centralize operational workflows, reporting and internal visibility for cross-functional teams.",
+      "A reusable backend scaffold for multi-tenant enterprise applications, with support for Google, Microsoft and local account authentication.",
     image:
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80",
-    href: "/portfolio/internal-dashboard",
+      "https://images.unsplash.com/photo-1659782229445-19a69f10f6d8?auto=format&fit=crop&w=1200&q=80",
+    href: "/portfolio/multitenant-auth-scaffold",
     status: "MVP",
   },
   {
-    title: "AI research assistant for backend teams",
+    title: "MCP Server for Inventory Management Integration",
     description:
-      "A proof of concept focused on accelerating investigation workflows, documenting findings and validating technical ideas faster.",
+      "An MCP server that connects inventory management systems with custom ChatGPT assistants, enabling AI-driven inventory queries and operational workflows through natural language.",
     image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
-    href: "#",
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80",
+    href: "/portfolio/inventory-mcp-server",
     status: "POC",
   },
   {
-    title: "View my projects on GitHub",
+    title: "Chatbot Assistant for Insurance Operations",
     description:
-      "Explore more projects, experiments and ideas I’ve been building across backend, frontend and AI.",
+      "An AI-powered chatbot assistant for insurance workflows, designed to support automated form completion, contextual conversations and enterprise data retrieval.",
     image:
-      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80",
-    href: "https://github.com/amarqueze",
-    status: "Investigation",
+      "https://images.unsplash.com/photo-1662974770404-468fd9660389?auto=format&fit=crop&w=1200&q=80",
+    href: "/portfolio/insurance-chatbot-assistant",
+    status: "POC",
   },
 ];
 
@@ -37,7 +37,7 @@ const Portfolio = () => {
       <div className="portfolio-header">
         <h2>Portfolio</h2>
         <p className="portfolio-description">
-          A selection of product ideas, experiments and technical work.
+          A curated view of concepts, experiments, and product-focused work in progress.
         </p>
       </div>
 

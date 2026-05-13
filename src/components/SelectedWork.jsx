@@ -3,22 +3,22 @@ import { Link } from "react-router-dom";
 
 const projects = [
   {
-    title: "Internal dashboard for product operations",
+    title: "MCP Server for Inventory Management Integration",
     description:
-      "A lightweight MVP to centralize operational workflows, reporting, and internal visibility for cross-functional teams.",
+      "An MCP server that connects inventory management systems with custom ChatGPT assistants, enabling AI-driven inventory queries and operational workflows through natural language.",
     image:
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80",
-    href: "/portfolio/internal-dashboard",
-    status: "MVP",
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80",
+    href: "/portfolio/inventory-mcp-server",
+    status: "POC",
   },
   {
-    title: "AI research assistant for backend teams",
+    title: "Multi-Tenant Authentication Scaffold",
     description:
-      "A proof of concept focused on accelerating investigation workflows, documenting findings, and validating technical ideas faster.",
+      "A reusable backend scaffold for multi-tenant enterprise applications, with support for Google, Microsoft and local account authentication.",
     image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
-    href: "#",
-    status: "POC",
+      "https://images.unsplash.com/photo-1659782229445-19a69f10f6d8?auto=format&fit=crop&w=1200&q=80",
+    href: "/portfolio/multitenant-auth-scaffold",
+    status: "MVP",
   },
 ];
 
@@ -28,8 +28,7 @@ const SelectedWork = () => {
       <div className="selected-work-header">
         <h2 className="selected-work-title">Portfolio</h2>
         <p className="selected-work-description">
-          A curated view of concepts, experiments, and product-focused work in
-          progress.
+          A selection of product ideas, experiments and technical work.
         </p>
       </div>
 

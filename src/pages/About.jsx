@@ -104,9 +104,10 @@ const About = () => {
           LinkedIn
         </a>
         <a
-          href="https://www.instagram.com/alan.marqueze"
           target="_blank"
           rel="noreferrer"
+          aria-disabled="true"
+          style={{ color: "gray", cursor: "not-allowed" }}
         >
           Instagram
         </a>

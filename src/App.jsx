@@ -7,8 +7,9 @@ import About from './pages/About.jsx';
 import Portfolio from './pages/Portfolio.jsx';
 import Blog from './pages/Blog.jsx';
 import LangChainPost from "./pages/blog/LangChainPost.jsx";
-import SystemDesignPost from './pages/blog/SystemDesignPost.jsx';
-import InternalDashboardProject from './pages/portfolio/InternalDashboardProject.jsx';
+import InventoryMcpServerProject from "./pages/portfolio/InventoryMcpServerProject.jsx";
+import InsuranceChatbotAssistantProject from "./pages/portfolio/InsuranceChatbotAssistantProject.jsx";
+import MultitenantAuthScaffoldProject from "./pages/portfolio/MultitenantAuthScaffoldProject.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 
 function App() {
@@ -24,9 +25,10 @@ function App() {
           <Route path="/blog" element={<Blog />} />
 
           <Route path="/blog/langchain-guide" element={<LangChainPost />} />
-          <Route path="/blog/system-design" element={<SystemDesignPost />} />
 
-          <Route path="/portfolio/internal-dashboard" element={<InternalDashboardProject />} />
+          <Route path="/portfolio/inventory-mcp-server" element={<InventoryMcpServerProject />}/>
+          <Route path="/portfolio/insurance-chatbot-assistant" element={<InsuranceChatbotAssistantProject />}/>
+          <Route path="/portfolio/multitenant-auth-scaffold" element={<MultitenantAuthScaffoldProject />}/>
         </Routes>
       </main>
       <Footer />
