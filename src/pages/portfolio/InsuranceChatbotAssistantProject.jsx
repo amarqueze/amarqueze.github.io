@@ -35,10 +35,10 @@ const InsuranceChatbotAssistantProject = () => {
       <h2>Tech Stack</h2>
       <ul className="project-tech-stack">
         <li>Python</li>
+        <li>Fast API</li>
         <li>LangChain</li>
         <li>OpenAI APIs</li>
         <li>PostgreSQL</li>
-        <li>REST APIs</li>
       </ul>
 
       <h2>Highlights</h2>

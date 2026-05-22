@@ -532,6 +532,13 @@ section h3 {
   color: var(--color-accent);
 }
 
+.latest-writing-card-updated {
+  margin: -0.25rem 0 0.75rem;
+  color: var(--color-secondary-text);
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
 .latest-writing-card-excerpt {
   margin: 0 0 1.25rem;
   color: var(--color-secondary-text);
@@ -774,6 +781,7 @@ section h3 {
 
 .article-meta {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.6rem;
   align-items: center;
   color: var(--color-secondary-text);
@@ -786,6 +794,7 @@ section h3 {
 
 .article-hero-image {
   width: 100%;
+  max-height: 500px;
   border-radius: 28px;
   object-fit: cover;
 }
@@ -831,6 +840,30 @@ section h3 {
   color: var(--color-secondary-text);
   background-color: var(--color-background-secondary);
   border-radius: 12px;
+}
+
+.article-table-wrapper {
+  margin: 1.5rem 0 2rem;
+  overflow-x: auto;
+}
+
+.article-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.article-table th,
+.article-table td {
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--color-border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.article-table th {
+  background-color: var(--color-background-secondary);
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {

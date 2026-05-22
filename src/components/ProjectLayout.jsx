@@ -29,7 +29,7 @@ const ProjectLayout = ({
           <div className="project-links">
             {githubUrl && (
               <a href={githubUrl} target="_blank" rel="noreferrer">
-                GitHub
+                View Github repository
               </a>
             )}
 
@@ -65,7 +65,7 @@ const ProjectLayout = ({
         <div className="project-footer-links">
           {githubUrl && (
             <a href={githubUrl} target="_blank" rel="noreferrer">
-              GitHub
+              View Github repository
             </a>
           )}
 

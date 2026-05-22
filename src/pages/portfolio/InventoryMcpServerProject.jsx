@@ -8,7 +8,7 @@ const InventoryMcpServerProject = () => {
       title="MCP Server for Inventory Management Integration"
       description="An MCP server that connects inventory management systems with custom ChatGPT assistants, enabling AI-driven inventory queries and operational workflows through natural language."
       image="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1400&q=80"
-      githubUrl=""
+      githubUrl="https://github.com/amarqueze/inventory-mcp-server"
       liveUrl=""
     >
       <h2>Overview</h2>

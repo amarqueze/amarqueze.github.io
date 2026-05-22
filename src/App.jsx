@@ -11,6 +11,9 @@ import InventoryMcpServerProject from "./pages/portfolio/InventoryMcpServerProje
 import InsuranceChatbotAssistantProject from "./pages/portfolio/InsuranceChatbotAssistantProject.jsx";
 import MultitenantAuthScaffoldProject from "./pages/portfolio/MultitenantAuthScaffoldProject.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
+import JavaVersionsPost from "./pages/blog/JavaVersionsPost.jsx";
+import SpringBootDddPost from "./pages/blog/SpringBootDddPost.jsx";
+import EventDrivenArchitecturePost from "./pages/blog/EventDrivenArchitecturePost.jsx";
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
           <Route path="/blog" element={<Blog />} />
 
           <Route path="/blog/langchain-guide" element={<LangChainPost />} />
+          <Route path="/blog/java-versions-guide" element={<JavaVersionsPost />} />
+          <Route path="/blog/event-driven-architecture-spring-boot" element={<EventDrivenArchitecturePost />} />
+          <Route path="/blog/spring-boot-ddd-structure" element={<SpringBootDddPost />} />
 
           <Route path="/portfolio/inventory-mcp-server" element={<InventoryMcpServerProject />}/>
           <Route path="/portfolio/insurance-chatbot-assistant" element={<InsuranceChatbotAssistantProject />}/>

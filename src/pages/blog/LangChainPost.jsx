@@ -7,8 +7,8 @@ const LangChainPost = () => {
       tag="AI Engineering"
       title="Complete Guide to Getting Started with LangChain"
       subtitle="Architecture, RAG, agents, real applications and how LangChain connects LLMs with production software systems."
-      date="January 2026"
-      readingTime="12 min read"
+      date="January 15 2026"
+      readingTime="20 min read"
     >
       <h2>Introduction</h2>
       <p>The biggest job opportunity created by artificial intelligence is not necessarily building new AI models, but building the invisible infrastructure that connects AI with real companies.</p>

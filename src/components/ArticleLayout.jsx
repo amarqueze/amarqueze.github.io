@@ -6,10 +6,17 @@ const ArticleLayout = ({
   title,
   subtitle,
   date,
+  updated,
   readingTime,
   image,
   children,
 }) => {
+  const metaItems = [
+    date && `Published ${date}`,
+    updated && `Updated ${updated}`,
+    readingTime,
+  ].filter(Boolean);
+
   return (
     <article className="article-page">
       <div className="article-shell">
@@ -24,11 +31,16 @@ const ArticleLayout = ({
 
           {subtitle && <p className="article-subtitle">{subtitle}</p>}
 
-          <div className="article-meta">
-            <span>{date}</span>
-            <span>·</span>
-            <span>{readingTime}</span>
-          </div>
+          {metaItems.length > 0 && (
+            <div className="article-meta">
+              {metaItems.map((item, index) => (
+                <React.Fragment key={`${item}-${index}`}>
+                  {index > 0 && <span aria-hidden="true">/</span>}
+                  <span>{item}</span>
+                </React.Fragment>
+              ))}
+            </div>
+          )}
         </header>
 
         {image && (
