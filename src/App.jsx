@@ -8,7 +8,7 @@ import Portfolio from './pages/Portfolio.jsx';
 import Blog from './pages/Blog.jsx';
 import LangChainPost from "./pages/blog/LangChainPost.jsx";
 import InventoryMcpServerProject from "./pages/portfolio/InventoryMcpServerProject.jsx";
-import InsuranceChatbotAssistantProject from "./pages/portfolio/InsuranceChatbotAssistantProject.jsx";
+import AsientaProject from "./pages/portfolio/AsientaProject.jsx";
 import MultitenantAuthScaffoldProject from "./pages/portfolio/MultitenantAuthScaffoldProject.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import JavaVersionsPost from "./pages/blog/JavaVersionsPost.jsx";
@@ -33,7 +33,7 @@ function App() {
           <Route path="/blog/spring-boot-ddd-structure" element={<SpringBootDddPost />} />
 
           <Route path="/portfolio/inventory-mcp-server" element={<InventoryMcpServerProject />}/>
-          <Route path="/portfolio/insurance-chatbot-assistant" element={<InsuranceChatbotAssistantProject />}/>
+          <Route path="/portfolio/asienta" element={<AsientaProject />}/>
           <Route path="/portfolio/multitenant-auth-scaffold" element={<MultitenantAuthScaffoldProject />}/>
         </Routes>
       </main>

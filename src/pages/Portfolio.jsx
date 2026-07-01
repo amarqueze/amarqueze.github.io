@@ -3,6 +3,15 @@ import { Link } from "react-router-dom";
 
 const projects = [
   {
+    title: "Asienta",
+    description:
+      "A configurable accounting platform that transforms business operations into automated accounting workflows through an event-driven engine and reusable templates.",
+    image:
+      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80",
+    href: "/portfolio/asienta",
+    status: "In-Progress",
+  },
+  {
     title: "Multi-Tenant Authentication Scaffold",
     description:
       "A reusable backend scaffold for multi-tenant enterprise applications, with support for Google, Microsoft and local account authentication.",
@@ -10,6 +19,7 @@ const projects = [
       "https://images.unsplash.com/photo-1659782229445-19a69f10f6d8?auto=format&fit=crop&w=1200&q=80",
     href: "/portfolio/multitenant-auth-scaffold",
     status: "MVP",
+    hidden: true,
   },
   {
     title: "MCP Server for Inventory Management Integration",
@@ -19,16 +29,8 @@ const projects = [
       "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80",
     href: "/portfolio/inventory-mcp-server",
     status: "POC",
-  },
-  {
-    title: "Chatbot Assistant for Insurance Operations",
-    description:
-      "An AI-powered chatbot assistant for insurance workflows, designed to support automated form completion, contextual conversations and enterprise data retrieval.",
-    image:
-      "https://images.unsplash.com/photo-1662974770404-468fd9660389?auto=format&fit=crop&w=1200&q=80",
-    href: "/portfolio/insurance-chatbot-assistant",
-    status: "POC",
-  },
+    hidden: true,
+  }
 ];
 
 const Portfolio = () => {
@@ -42,7 +44,7 @@ const Portfolio = () => {
       </div>
 
       <div className="portfolio-grid">
-        {projects.map((project, index) => (
+        {projects.filter(project => !project.hidden).map((project, index) => (
           <article className="selected-work-card" key={index}>
             <div className="selected-work-card-content">
               <span

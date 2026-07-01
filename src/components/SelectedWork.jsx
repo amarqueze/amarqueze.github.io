@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 const projects = [
   {
-    title: "MCP Server for Inventory Management Integration",
+    title: "Asienta",
     description:
-      "An MCP server that connects inventory management systems with custom ChatGPT assistants, enabling AI-driven inventory queries and operational workflows through natural language.",
+      "A configurable accounting platform that transforms business operations into automated accounting workflows through an event-driven engine and reusable templates.",
     image:
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80",
-    href: "/portfolio/inventory-mcp-server",
-    status: "POC",
+      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80",
+    href: "/portfolio/asienta",
+    status: "In-Progress",
   },
   {
     title: "Multi-Tenant Authentication Scaffold",
@@ -19,6 +19,7 @@ const projects = [
       "https://images.unsplash.com/photo-1659782229445-19a69f10f6d8?auto=format&fit=crop&w=1200&q=80",
     href: "/portfolio/multitenant-auth-scaffold",
     status: "MVP",
+    hidden: true,
   },
 ];
 
@@ -33,7 +34,7 @@ const SelectedWork = () => {
       </div>
 
       <div className="selected-work-list">
-        {projects.map((project, index) => (
+        {projects.filter(project => !project.hidden).map((project, index) => (
           <article className="selected-work-card" key={index}>
             <div className="selected-work-card-content">
               <span
