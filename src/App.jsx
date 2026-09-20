@@ -10,6 +10,7 @@ import LangChainPost from "./pages/blog/LangChainPost.jsx";
 import InventoryMcpServerProject from "./pages/portfolio/InventoryMcpServerProject.jsx";
 import AsientaProject from "./pages/portfolio/AsientaProject.jsx";
 import MultitenantAuthScaffoldProject from "./pages/portfolio/MultitenantAuthScaffoldProject.jsx";
+import PokedexProject from "./pages/portfolio/PokedexProject.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import JavaVersionsPost from "./pages/blog/JavaVersionsPost.jsx";
 import SpringBootDddPost from "./pages/blog/SpringBootDddPost.jsx";
@@ -35,6 +36,7 @@ function App() {
           <Route path="/portfolio/inventory-mcp-server" element={<InventoryMcpServerProject />}/>
           <Route path="/portfolio/asienta" element={<AsientaProject />}/>
           <Route path="/portfolio/multitenant-auth-scaffold" element={<MultitenantAuthScaffoldProject />}/>
+          <Route path="/portfolio/pokedex" element={<PokedexProject />}/>
         </Routes>
       </main>
       <Footer />

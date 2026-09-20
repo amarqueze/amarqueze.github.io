@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import pokedexImage from "../assets/pokedex-pokeball.png";
 
 const projects = [
   {
@@ -10,6 +11,14 @@ const projects = [
       "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80",
     href: "/portfolio/asienta",
     status: "In-Progress",
+  },
+  {
+    title: "Pokedex",
+    description:
+      "A client-side Angular SPA for exploring Pokemon data from PokeAPI, with simulated trainer authentication, live search, pagination, and type-based cards.",
+    image: pokedexImage,
+    href: "/portfolio/pokedex",
+    status: "POC",
   },
   {
     title: "Multi-Tenant Authentication Scaffold",

@@ -295,6 +295,7 @@ section h3 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  align-self: stretch;
 }
 
 .project-status-tag {
@@ -339,10 +340,38 @@ section h3 {
   font-size: 0.95rem;
 }
 
+.selected-work-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 0.45rem;
+  width: 100%;
+  height: calc(56px + 0.45rem);
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.selected-work-card-tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0.25rem 0.65rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background-color: var(--color-background);
+  color: var(--color-secondary-text);
+  font-size: 0.76rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
 .selected-work-card-link {
   display: inline-flex;
   align-items: center;
   gap: 0.85rem;
+  margin-top: auto;
   color: var(--color-primary-text);
   font-weight: 600;
   font-size: 0.98rem;
@@ -377,7 +406,7 @@ section h3 {
 
 .selected-work-card-image {
   width: 100%;
-  max-width: 220px;
+  max-width: 180px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 24px;
@@ -943,8 +972,12 @@ section h3 {
 
 .project-hero img {
   width: 100%;
+  max-height: 300px;
   border-radius: 24px;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
   margin: 2rem 0;
+  align-items: center;
 }
 
 .project-content h2 {
@@ -1066,10 +1099,20 @@ section h3 {
   }
 
   .selected-work-card-image {
-    max-width: 100%;
+    display: none;
+    width: 0;
   }
 
   .selected-work-card-title {
     font-size: 1.6rem;
+  }
+
+  .latest-writing-card-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

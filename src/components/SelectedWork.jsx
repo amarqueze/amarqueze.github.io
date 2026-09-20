@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import pokedexImage from "../assets/pokedex-pokeball.png";
+
+const maxVisibleTechTags = 5;
 
 const projects = [
   {
@@ -10,6 +13,16 @@ const projects = [
       "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80",
     href: "/portfolio/asienta",
     status: "In-Progress",
+    techTags: ["Java", "Spring Boot", "PostgreSQL", "NextJs", "Python"],
+  },
+  {
+    title: "Pokedex",
+    description:
+      "A client-side Angular SPA for exploring Pokemon data from PokeAPI, with simulated trainer authentication, live search, pagination, and type-based cards.",
+    image: pokedexImage,
+    href: "/portfolio/pokedex",
+    status: "POC",
+    techTags: ["Angular 13", "TypeScript", "RxJS", "PokeAPI"],
   },
   {
     title: "Multi-Tenant Authentication Scaffold",
@@ -20,6 +33,7 @@ const projects = [
     href: "/portfolio/multitenant-auth-scaffold",
     status: "MVP",
     hidden: true,
+    techTags: ["Java", "Spring Boot", "OAuth2", "PostgreSQL"],
   },
 ];
 
@@ -46,6 +60,22 @@ const SelectedWork = () => {
               <h3 className="selected-work-card-title">{project.title}</h3>
 
               <p className="selected-work-card-text">{project.description}</p>
+
+              <ul
+                className="selected-work-card-tags"
+                aria-hidden={!project.techTags?.length}
+                aria-label={
+                  project.techTags?.length
+                    ? `${project.title} technologies`
+                    : undefined
+                }
+              >
+                {(project.techTags ?? []).slice(0, maxVisibleTechTags).map((tag) => (
+                  <li className="selected-work-card-tag" key={tag}>
+                    {tag}
+                  </li>
+                ))}
+              </ul>
 
               <Link to={project.href} className="selected-work-card-link">
                 Read More
