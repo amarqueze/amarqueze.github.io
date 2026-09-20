@@ -22,10 +22,11 @@ const Hero = () => {
       <h2>Senior Software Engineer</h2>
 
       <p className="hero-description">
-        Designing and building scalable systems across frontend, backend with a focus on performance, reliability and clean architecture.
+        I turn business problems into practical technology solutions.
+        I design and build scalable software across backend, frontend, data and AI — focused on creating measurable business value.
       </p>
 
-      <p className="tagline">Continuous learning and system thinking.</p>
+      <p className="tagline">Understand the problem. Design the solution. Deliver the impact.</p>
 
       <div className="hero-links">
         <a href="https://github.com/amarqueze"
