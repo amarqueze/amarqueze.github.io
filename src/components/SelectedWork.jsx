@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import pokedexImage from "../assets/pokedex-pokeball.png";
+import dexterImage from "../assets/super_Ball.png";
 
 const maxVisibleTechTags = 5;
 
@@ -16,12 +17,22 @@ const projects = [
     techTags: ["Java", "Spring Boot", "PostgreSQL", "NextJs", "Python"],
   },
   {
+    title: "Dexter",
+    description:
+      "Dexter is a Pokemon search app where users can explore and discover information about all Pokemon.",
+    image: dexterImage,
+    href: "/portfolio/dexter",
+    status: "POC",
+    techTags: ["React", "TypeScript", "Axios", "PokeAPI"],
+  },
+  {
     title: "Pokedex",
     description:
       "A client-side Angular SPA for exploring Pokemon data from PokeAPI, with simulated trainer authentication, live search, pagination, and type-based cards.",
     image: pokedexImage,
     href: "/portfolio/pokedex",
     status: "POC",
+    hidden: true,
     techTags: ["Angular 13", "TypeScript", "RxJS", "PokeAPI"],
   },
   {
@@ -45,6 +56,10 @@ const SelectedWork = () => {
         <p className="selected-work-description">
           A selection of product ideas, experiments and technical work.
         </p>
+        <Link to="/portfolio" className="selected-work-show-all">
+          Show All
+          <span aria-hidden="true">&rarr;</span>
+        </Link>
       </div>
 
       <div className="selected-work-list">
