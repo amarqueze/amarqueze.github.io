@@ -4,6 +4,8 @@ import pokedexImage from "../assets/pokedex-pokeball.png";
 import dexterImage from "../assets/super_Ball.png";
 
 const maxVisibleTechTags = 5;
+const workBoardImage =
+  "https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=1200&q=80";
 
 const projects = [
   {
@@ -24,6 +26,15 @@ const projects = [
     href: "/portfolio/dexter",
     status: "POC",
     techTags: ["React", "TypeScript", "Axios", "PokeAPI"],
+  },
+  {
+    title: "WorkBoard",
+    description:
+      "A full-stack task management POC with a Django REST API, React frontend, JWT authentication, task assignment, state changes, and Docker Compose setup.",
+    image: workBoardImage,
+    href: "/portfolio/workboard",
+    status: "POC",
+    techTags: ["Django", "DRF", "React", "TypeScript", "Docker"],
   },
   {
     title: "Pokedex",

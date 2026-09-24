@@ -12,6 +12,7 @@ import AsientaProject from "./pages/portfolio/AsientaProject.jsx";
 import MultitenantAuthScaffoldProject from "./pages/portfolio/MultitenantAuthScaffoldProject.jsx";
 import PokedexProject from "./pages/portfolio/PokedexProject.jsx";
 import DexterProject from "./pages/portfolio/DexterProject.jsx";
+import WorkBoardProject from "./pages/portfolio/WorkBoardProject.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import JavaVersionsPost from "./pages/blog/JavaVersionsPost.jsx";
 import SpringBootDddPost from "./pages/blog/SpringBootDddPost.jsx";
@@ -39,6 +40,7 @@ function App() {
           <Route path="/portfolio/multitenant-auth-scaffold" element={<MultitenantAuthScaffoldProject />}/>
           <Route path="/portfolio/pokedex" element={<PokedexProject />}/>
           <Route path="/portfolio/dexter" element={<DexterProject />}/>
+          <Route path="/portfolio/workboard" element={<WorkBoardProject />}/>
         </Routes>
       </main>
       <Footer />
